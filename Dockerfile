@@ -18,4 +18,4 @@ COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 # copy jenkins shared configuration
-COPY init.color.d/ $JENKINS_REF
+COPY init.groovy/ $JENKINS_REF
